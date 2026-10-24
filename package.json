@@ -1,0 +1,19 @@
+{
+  "name": "jannetra-civic-issue-portal",
+  "version": "1.0.0",
+  "description": "JanNetra - Civic Issue Management Portal (Department of Computer Science & Engineering)",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "serve": "python -m http.server 3000"
+  },
+  "keywords": [
+    "react",
+    "civic-portal",
+    "grievance-redressal",
+    "vanilla-css",
+    "localstorage"
+  ],
+  "author": "Department of Computer Science & Engineering",
+  "license": "MIT"
+}

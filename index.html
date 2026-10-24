@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JanNetra - Civic Issue Management Portal</title>
+  
+  <!-- SEO & Portal Metadata -->
+  <meta name="description" content="JanNetra is a modern, responsive Civic Issue Management and Grievance Redressal Portal built with React, CSS Grid/Flexbox, and LocalStorage for municipal transparency.">
+  <meta name="keywords" content="Civic Issue, Municipal Portal, JanNetra, Pothole Reporting, Grievance Redressal, Citizen Portal">
+  <meta name="author" content="Department of Computer Science & Engineering">
+  
+  <!-- Favicon / Visual Branding -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👁️</text></svg>">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Design System & Responsive Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- React 18 & ReactDOM 18 via CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#root" class="sr-only" style="position:absolute;left:-9999px;">Skip to main content</a>
+
+  <!-- React Application Mount Container -->
+  <div id="root">
+    <!-- Initial Loading State -->
+    <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; gap: 1rem; color: #1e3a5f;">
+      <div style="width: 48px; height: 48px; border: 4px solid #bfdbfe; border-top-color: #1d4ed8; border-radius: 50%; animation: spin 0.8s linear infinite;"></div>
+      <p style="font-weight: 600; font-size: 1.1rem;">Initializing JanNetra Civic Portal...</p>
+      <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+    </div>
+  </div>
+
+  <noscript>
+    <div style="padding: 2rem; text-align: center; font-family: sans-serif; background: #fee2e2; color: #991b1b;">
+      <h2>JavaScript Required</h2>
+      <p>JanNetra Civic Portal requires JavaScript to be enabled in order to run the dynamic grievance management dashboard.</p>
+    </div>
+  </noscript>
+
+  <!-- Core Mock Dataset & Persistence Helpers -->
+  <script src="js/data.js"></script>
+
+  <!-- React Application (Standalone distribution, runs locally and over HTTP without CORS issues) -->
+  <!-- Human-readable JSX source code is available in js/app.jsx -->
+  <script src="js/app.js"></script>
+</body>
+</html>
